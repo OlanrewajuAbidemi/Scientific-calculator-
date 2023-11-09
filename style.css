@@ -118,3 +118,14 @@ grid-template-columns: repeat(6,1fr);
     font-size: 14px;
     font-weight: bolder;
 }
+#numbutton div{
+    margin-top: -20px;
+}
+#numbutton i{
+    color: #F18B75;
+    font-size: 14px;
+    font-weight: bolder;
+}
+#numbutton i img{
+    height: 10px;
+}
