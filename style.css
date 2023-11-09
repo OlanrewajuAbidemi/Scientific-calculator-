@@ -1,0 +1,120 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 10px;  
+}
+#container{
+    text-align: center;
+    align-items: center;
+    width: 350px;
+    justify-content: center;
+    background-color:#AA2A4F;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+}
+#semi{
+    width: 340px;
+    background-color:#E8539B;
+    margin: auto;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#nodisplay{
+display: flex;
+text-align: center;
+justify-content: center;
+padding-top: 40px;
+gap:1px;
+border: 15px;
+}
+#nodisplay div{
+    width: 70px;
+    height: 40px;
+    background-color:#635143;
+
+}
+.front{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+
+
+}
+.back{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#casio{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    color: white;
+    font-family: cursive;
+}
+input{
+    background-color: #95A298;
+    width: 280px;
+    height: 70px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow:10px, 10px, #E8539B ;
+
+}
+
+#sinbutton{
+    display: grid;
+grid-template-columns: repeat(6,1fr);
+    gap:18px;
+    padding-left: 10px;
+    width: 200px;
+    margin-left: 17px;
+    background-color:#E8539B;
+   
+
+}
+#sinbutton button{
+    width: 32px;
+    height: 30px;
+    background-color: #B83461;
+    color: white;
+    font-size:small;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+#numbutton{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 18px;
+    width:300px ;
+    margin-left: 17px;
+    padding-left: 10px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+#numbutton button{
+    width:35px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #B83461;
+    color: white;
+    font-weight: bolder;
+}
+#sinbutton div{
+    margin-top: -20px;
+}
+#sinbutton i{
+    color: #F18B75;
+    font-size: 14px;
+    font-weight: bolder;
+}
