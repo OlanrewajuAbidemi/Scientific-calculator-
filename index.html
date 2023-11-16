@@ -19,7 +19,7 @@
         <h3>CASIO</h3>
         <h5>fx-260 SOLARI II</h5> 
         </div>
-        <input type="text" readonly>
+        <input id="input" type="text" readonly>
 <div id="sinbutton">
     <div>
         <i>SHIFT</i>
@@ -27,18 +27,18 @@
     </div>
     <button id="mode">MODE</button>
     <div>
-        <i><img src="square-root.png"></i>
-    <button>X2</button>
+        <i>3<img src="square-root.png"></i> 
+    <button onclick="poww()">X<sup>2</sup></button>
     </div>
     <div>
         <i>10<sup>x</sup></i>
-    <button>log</button>
+    <button onclick="logg()">log</button>
     </div>
     <div>
         <i>e<sup>x</sup></i>
-    <button>In</button>
+    <button onclick="sq(Math.exp)">In</button>
     </div>
-    <button id="onbutton">ON</button>
+    <button onclick="On()" id="onbutton">ON</button>
     <div>
         <i>d/c</i>
     <button>ab/c</button>
@@ -47,22 +47,22 @@
         <i><img src="left-arrow.png"></i>
     <button>.' "</button>
     </div>
-    <button>hyp</button>
+    <button >hyp</button>
     <div>
         <i>sin<sup>-1</sup></i>
-    <button>sin</button>
+    <button onclick="cos(Math.sin)">sin</button>
     </div>
     <div>
         <i>cos<sup>-1</sup></i>
-    <button>cos</button>
+    <button onclick="cos(Math.cos)">cos</button>
     </div>
     <div>
         <i>tan<sup>-1</sup></i>
-    <button>tan</button>
+    <button onclick="cos(Math.tan)">tan</button>
     </div>
     <div>
-        <i>3<img src="square-root.png"></i>
-    <button id="p&mbutton">+/-</button>
+     <i><img src="square-root.png"></i>
+    <button onclick="sq(Math.sqrt)" id="p&mbutton">+/-</button>
     </div>
     <div>
         <i>x<sup>3</sup></i>
@@ -82,85 +82,85 @@
     </div>
     <div>
         <i>Min</i>
-    <button id="mrbutton">MR</button>
+    <button onclick="numadd(Math.min)" id="mrbutton">MR</button>
     </div>
 </div>
 <div id="numbutton">
     <div>
         <i>x<sup>-</sup></i>
-    <button id="seven">7</button>
+    <button onclick="numadd(7)" id="seven">7</button>
     </div>
     <div>
         <i>ón</i>
-    <button>8</button>
+    <button onclick="numadd(8)">8</button>
     </div>
     <div>
         <i>ón-1</i>
-    <button>9</button>
+    <button onclick="numadd(9)">9</button>
     </div>
     <div>
         <i>x<img src="double-horizontal-arrow-pointing-to-both-sides.png">m</i>
-    <button id="c">C</button>
+    <button onclick="del()" id="c">C</button>
 </div>
      <div>
         <i>sac</i>
-    <button id="ac">AC</button>
+    <button onclick="cclear()" id="ac">AC</button>
 </div>
 <div>
     <i>Ex<sup>2</sup></i>
-    <button>4</button>
+    <button onclick="numadd(4)">4</button>
     </div>
     <div>
         <i>Ex</i>
-    <button>5</button>
+    <button onclick="numadd(5)">5</button>
 </div>
 <div>
     <i>n</i>
-    <button>6</button>
+    <button onclick="numadd(6)">6</button>
     </div>
     <div>
         <i>eng<sup>-</sup></i>
-    <button>X</button>
+    <button onclick="numadd('*')">X</button>
     </div>
     <div>
         <i>ENG</i>
-    <button>%</button>
+    <button onclick="numadd('/')"><img src="divide.png"></button>
     </div>
     <div>
         <i>nPr</i>
-    <button>1</button>
+    <button onclick="numadd(1)">1</button>
     </div>
     <div>
         <i>nCr</i>
-    <button>2</button>
+    <button onclick="numadd(2)">2</button>
     </div>
     <div>
         <i>x!</i>
-    <button>3</button>
+    <button onclick="numadd(3)">3</button>
     </div>
     <div>
         <i>R<img src="right-arrow-3.png">P</i>
-    <button>+</button>
+    <button onclick="numadd('+')">+</button>
     </div>
     <div>
         <i>P<img src="right-arrow-3.png">R</i>
-    <button>-</button>
+    <button onclick="numadd('-')">-</button>
     </div>
     <div>
         <i>RND</i>
-    <button id="zero">0</button>
+    <button onclick="numadd(0)" id="zero">0</button>
     </div>
     <div>
         <i>RAN#</i>
-    <button>.</button>
+    <button onclick="numadd('.')">.</button>
     </div>
     <div>
         <i><img src="pi-mathematical-constant-symbol.png"></i>
-    <button>exp</button>
+    <button onclick="numadd(Math.PI)">exp</button>
     </div>
     <div>
         <i>%</i>
-    <button>=</button>
+    <button onclick="eevaluate()">=</button>
     </div>
     <div>
         <i>M-</i>
